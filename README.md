@@ -17,6 +17,7 @@ Each role has access to specific functionalities based on authorization.
 ## 🛠 Tech Stack
 
 ### Backend
+
 - Node.js
 - Express.js
 - PostgreSQL (or MySQL)
@@ -24,6 +25,7 @@ Each role has access to specific functionalities based on authorization.
 - Bcrypt for password hashing
 
 ### Frontend
+
 - React.js
 - React Router
 - Axios
@@ -90,18 +92,19 @@ Each role has access to specific functionalities based on authorization.
 
 ## ✅ Form Validations
 
-| Field     | Validation Rules |
-|-----------|------------------|
-| Name      | 20–60 characters |
-| Address   | Max 400 characters |
-| Password  | 8–16 characters, at least 1 uppercase letter & 1 special character |
-| Email     | Valid email format |
+| Field    | Validation Rules                                                   |
+| -------- | ------------------------------------------------------------------ |
+| Name     | 20–60 characters                                                   |
+| Address  | Max 400 characters                                                 |
+| Password | 8–16 characters, at least 1 uppercase letter & 1 special character |
+| Email    | Valid email format                                                 |
 
 ---
 
 ## 🗄 Database Schema (High Level)
 
 ### Users Table
+
 - id
 - name
 - email
@@ -111,6 +114,7 @@ Each role has access to specific functionalities based on authorization.
 - created_at
 
 ### Stores Table
+
 - id
 - name
 - email
@@ -118,6 +122,7 @@ Each role has access to specific functionalities based on authorization.
 - owner_id (FK → users.id)
 
 ### Ratings Table
+
 - id
 - user_id (FK → users.id)
 - store_id (FK → stores.id)
@@ -148,3 +153,4 @@ Each role has access to specific functionalities based on authorization.
 cd backend
 npm install
 npm run dev
+```
